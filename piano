@@ -39,18 +39,19 @@ function setup() {
 
 function draw() { 
 	fill(120);
- 	  if (playingA) {
-			background(0,255,255);
-		   rect(0, 0, width/4, height);
-	} else if (playingS) {
-		   rect(width/4, 0, width/4, height);
-	} else if (playingD) {
-		   rect(width/2, 0, width/4, height);
-	} else if (playingF) {
-		   rect(width/1.33, 0, width/4, height);
-	} else  {
-	background(255,0,255);
+	background(0,255,255);
+  if (playingA) {
+    rect(0, 0, width/4, height);
+	} 
+	if (playingS) {
+    rect(width/4, 0, width/4, height);
 	}
+	if (playingD) {
+		rect(width/2, 0, width/4, height);
+	} 
+	if (playingF) {
+		rect(width/1.33, 0, width/4, height);
+	} 
   text('click here,\nthen press A/S/D/F\n keys to play', width / 2, 40);
 }
 
